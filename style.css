@@ -14,6 +14,10 @@ body, h1, h2, h3, p, ul {
     margin: 0px;
 }
 
+ul {
+    list-style: none;
+}
+
 .header_list {
     display: flex;
     list-style: none;
@@ -81,7 +85,12 @@ body, h1, h2, h3, p, ul {
     gap: 30px;
 }
 
-
+.section_one_list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+}
 
 .section_one_article {
     width: 270px;
@@ -101,7 +110,7 @@ body, h1, h2, h3, p, ul {
     margin-top: 94px;
 }
 
-.section_two_imges {
+.section_two_list {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -123,7 +132,7 @@ body, h1, h2, h3, p, ul {
     height: 648px;
 }
 
-.section_three_div {
+.section_three_list {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -134,7 +143,7 @@ body, h1, h2, h3, p, ul {
     margin-top: 50px;
 }
 
-.section_three_article_h6 {
+.section_three_article_h3 {
     text-align: center;
     font-size: 16px;
 }
