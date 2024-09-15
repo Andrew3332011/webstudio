@@ -1,0 +1,144 @@
+.header_container {
+    display: flex;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header_list {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-left: 93px;
+
+}
+
+.header_inform_list {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-left: 344px;
+
+}
+
+.header_link {
+    text-decoration: none;
+    color: black;
+}
+
+.header_inform_link {
+    color: rgb(152, 152, 152);
+    text-decoration: none;
+}
+
+.header_inform_link:hover {
+    color: #2196f3;
+}
+
+.header_link:hover {
+    color: #2196f3;
+}
+
+.header_section {
+    background-color: rgb(70, 69, 78);
+    height: 600px;
+}
+
+.h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    font-size: 44px;
+}
+
+.header_button {
+    margin-top: 30px;
+    margin-left: 700px;
+    background-color: #2196f3;
+    border: none;
+    width: 216px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    color: white;
+    font-size: 16px;
+
+}
+
+.section_one {
+    display: flex;
+    margin-top: 94px;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.section_one_article {
+    width: 270px;
+    height: 98px;
+}
+
+.section_one_article_h4 {
+    font-size: 17px;
+}
+
+.section_one_article_p {
+    font-size: 14px;
+    color: rgb(152, 152, 152);
+}
+
+.section_two {
+    margin-top: 94px;
+}
+
+.section_two_imges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.section_two_h2 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 29px;
+}
+
+.section_three_article_pic {
+    width: 270px;
+    height: 260px;
+}
+
+.section_three {
+    background-color: #f5f4fa;
+    height: 648px;
+}
+
+.section_three_div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.section_three_article {
+    background-color: white;
+    margin-top: 50px;
+}
+
+.section_three_article_h6 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.section_three_article_p {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(152, 152, 152);
+}
+
+.section_three_h2 {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 94px;
+}
