@@ -1,9 +1,17 @@
 .header_container {
     display: flex;
+    padding: 25px 0;
 }
 
-body {
+.container {
+    width: 1170px;
+    margin: 0px auto;
+}
+
+body, h1, h2, h3, p, ul {
     font-family: "Roboto", sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 .header_list {
@@ -40,7 +48,7 @@ body {
     color: #2196f3;
 }
 
-.header_section {
+.hero_section {
     background-color:  #2f303a;
     height: 600px;
 }
@@ -53,7 +61,7 @@ body {
     font-size: 44px;
 }
 
-.header_button {
+.hero_button {
     margin-top: 30px;
     margin-left: 700px;
     background-color: #2196f3;
