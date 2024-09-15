@@ -149,3 +149,17 @@ footer {
     
     
 }
+
+.footer_div {
+    padding-top: 60px;
+    padding-left: 215px;
+}
+
+.footer_div_p {
+    color: #fff;
+    padding-top: 20px;
+}
+
+span {
+    padding-top: 9px;
+}
