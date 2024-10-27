@@ -1,3 +1,10 @@
+:root {
+    --black: #000;
+    --light-grey: #989898;
+    --royal-blue: #2196f3;
+    --navy: #2f303a;
+}
+
 .header_container {
     display: flex;
     padding: 25px 0;
@@ -36,24 +43,24 @@ ul {
 
 .header_link {
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 .header_inform_link {
-    color: rgb(152, 152, 152);
+    color: var(--light-grey);
     text-decoration: none;
 }
 
 .header_inform_link:hover {
-    color: #2196f3;
+    color: var(--royal-blue);
 }
 
 .header_link:hover {
-    color: #2196f3;
+    color: var(--royal-blue);
 }
 
 .hero_section {
-    background-color:  #2f303a;
+    background-color: var(--navy);
     height: 600px;
 }
 
@@ -72,7 +79,7 @@ ul {
 
 .hero_button {
     
-    background-color: #2196f3;
+    background-color: var(--royal-blue);
     border: none;
     width: 216px;
     height: 50px;
@@ -104,7 +111,7 @@ ul {
 
 .section_one_article_p {
     font-size: 14px;
-    color: rgb(152, 152, 152);
+    color: var(--light-grey);
     padding-top: 10px;
     line-height: 171%;
 }
@@ -157,7 +164,7 @@ ul {
 .section_three_article_p {
     text-align: center;
     font-size: 16px;
-    color: rgb(152, 152, 152);
+    color: var(--light-grey);
     padding-top: 10px;
 }
 
@@ -168,7 +175,7 @@ ul {
 }
 
 footer {
-    background-color:  #2f303a;
+    background-color: var(--navy);
     height: 252px;
     
     
@@ -188,7 +195,7 @@ span {
 }
 
 .footer_link {
-    color: rgb(152, 152, 152);
+    color: var(--light-grey);
     text-decoration: none;
     
 }
