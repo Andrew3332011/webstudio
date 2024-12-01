@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -12,24 +13,29 @@
     <header class="header">
         <div class="header_container container">
             <a class="header_logo" href="./index.html"><img class="header_img" src="./images/WebStudio.png"
-                    alt="WebStudio"></a>
+                    alt="WebStudio" /></a>
 
             <nav class="header_nav">
                 <ul class="header_list">
-                    <li class="header_item"><a class="header_link" href="./index.html">Студія</a></li>
-                    <li class="header_item"><a class="header_link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="header_item"><a class="header_link" href="">Контакти</a></li>
+                    <li class="header_item">
+                        <a class="header_link" href="./index.html">Студія</a>
+                    </li>
+                    <li class="header_item">
+                        <a class="header_link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="header_item">
+                        <a class="header_link" href="">Контакти</a>
+                    </li>
                 </ul>
             </nav>
 
             <ul class="header_inform_list">
-
-                <li class="header_inform_item"><a class="header_inform_link"
-                        href="mailto:info@webstudio.com">info@webstudio.com</a>
+                <li class="header_inform_item">
+                    <a class="header_inform_link" href="mailto:info@webstudio.com">info@webstudio.com</a>
                 </li>
-                <li class="header_inform_item"><a class="header_inform_link" href="tel:+380961111111">+380 96 111 11
-                        11</a></li>
-
+                <li class="header_inform_item">
+                    <a class="header_inform_link" href="tel:+380961111111">+380 96 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -37,76 +43,88 @@
 
     <main class="main">
         <!-- now we are gonna start the main section which is the only one -->
-        <section class="project">
-            <div class="container">
+        <section class="projects">
+            <div class="container projects_container">
                 <ul class="filters_list">
-                    <li class="filters_item"><a class="filters_link" href="">Усі</a></li>
-                    <li class="filters_item"><a class="filters_link" href="">Веб-сайти</a></li>
-                    <li class="filters_item"><a class="filters_link" href="">Додатки</a></li>
-                    <li class="filters_item"><a class="filters_link" href="">Дизайн</a></li>
-                    <li class="filters_item"><a class="filters_link" href="">Маркетинг</a></li>
+                    <li class="filters_item">
+                        <a class="filters_link" href="">Усі</a>
+                    </li>
+                    <li class="filters_item">
+                        <a class="filters_link" href="">Веб-сайти</a>
+                    </li>
+                    <li class="filters_item">
+                        <a class="filters_link" href="">Додатки</a>
+                    </li>
+                    <li class="filters_item">
+                        <a class="filters_link" href="">Дизайн</a>
+                    </li>
+                    <li class="filters_item">
+                        <a class="filters_link" href="">Маркетинг</a>
+                    </li>
                 </ul>
                 <div class="all_projects">
                     <ul class="projects_list">
                         <li class="projects_item">
                             <article class="projects_inform">
-                                <img class="projects_img" src="./images/computer.png" alt="computer">
+                                <img class="projects_img" src="./images/computer.png" alt="computer" />
                                 <h3 class="projects_name">Технокряк</h3>
                                 <p class="projects_type">Веб-сайт</p>
                             </article>
                         </li>
                         <li class="projects_item">
                             <article class="projects_inform">
-                                <img class="projects_img" src="./images/nba.png" alt="nba">
-                                <h3 class="projects_name">Постер New Orleans vs Golden State</h3>
+                                <img class="projects_img" src="./images/nba.png" alt="nba" />
+                                <h3 class="projects_name">
+                                    Постер New Orleans vs Golden State
+                                </h3>
                                 <p class="projects_type">Дизайн</p>
                             </article>
                         </li>
                         <li class="projects_item">
                             <article class="projects_inform">
-                                <img class="projects_img" src="./images/seafood.png" alt="seafood">
+                                <img class="projects_img" src="./images/seafood.png" alt="seafood" />
                                 <h3 class="projects_name">Ресторан Seafood</h3>
                                 <p class="projects_type">Додаток</p>
                             </article>
                         </li>
                         <li class="projects_item">
                             <article class="projects_inform">
-                                <img class="projects_img" src="./images/hwadphones.png" alt="headphones">
+                                <img class="projects_img" src="./images/hwadphones.png" alt="headphones" />
                                 <h3 class="projects_name">Проєкт Prime</h3>
                                 <p class="projects_type">Маркетинг</p>
                             </article>
                         </li>
                         <li class="projects_item">
                             <article class="projects_inform">
-                                <img class="projects_img" src="./images/boxes.png" alt="boxes">
+                                <img class="projects_img" src="./images/boxes.png" alt="boxes" />
                                 <h3 class="projects_name">Проєкт Boxes</h3>
                                 <p class="projects_type">Додаток</p>
                             </article>
                         </li>
                         <li class="projects_item">
                             <article class="projects_inform">
-                                <img class="projects_img" src="./images/noborders.png" alt="border project">
+                                <img class="projects_img" src="./images/noborders.png" alt="border project" />
                                 <h3 class="projects_name">Inspiration has no Borders</h3>
                                 <p class="projects_type">Веб-сайт</p>
                             </article>
                         </li>
                         <li class="projects_item">
                             <article class="projects_inform">
-                                <img class="projects_img" src="./images/book.png" alt="book">
+                                <img class="projects_img" src="./images/book.png" alt="book" />
                                 <h3 class="projects_name">Видання Limited Edition</h3>
                                 <p class="projects_type">Дизайн</p>
                             </article>
                         </li>
                         <li class="projects_item">
                             <article class="projects_inform">
-                                <img class="projects_img" src="./images/lab.png" alt="lab tag">
+                                <img class="projects_img" src="./images/lab.png" alt="lab tag" />
                                 <h3 class="projects_name">Проєкт LAB</h3>
                                 <p class="projects_type">Маркетинг</p>
                             </article>
                         </li>
                         <li class="projects_item">
                             <article class="projects_inform">
-                                <img class="projects_img" src="./images/bussines.png" alt="business">
+                                <img class="projects_img" src="./images/bussines.png" alt="business" />
                                 <h3 class="projects_name">Growing Business</h3>
                                 <p class="projects_type">Додаток</p>
                             </article>
@@ -117,12 +135,14 @@
         </section>
     </main>
     <!-- we almost there -->
-    <footer>
-        <div class="container">
+    <footer class="footer">
+        <div class="container footer_container">
             <div class="footer_div">
                 <a class="footer_logo_link" href="./index.html"><img class="footer_logo_img"
-                        src="./images/WebStudio.png" alt="WebStudio"></a>
-                <address class="footer_div_p">м. Київ, пр-т Лесі Українки, 26</address>
+                        src="./images/WebStudio.png" alt="WebStudio" /></a>
+                <address class="footer_div_p">
+                    м. Київ, пр-т Лесі Українки, 26
+                </address>
                 <ul class="footer_list">
                     <li class="footer_item">
                         <a class="footer_link" href="mailto:info@webstudio.com">info@webstudio.com</a>
@@ -134,8 +154,6 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 
 </html>
