@@ -4,10 +4,6 @@
     --main: #2f303a;
 }
 
-.hidden {
-    display: none;
-}
-
 .container {
     width: 1170px;
     margin: 0px auto;
@@ -20,26 +16,12 @@
     padding-bottom: 25px;
 }
 
-.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.pros {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.doing {
-    padding-bottom: 94px;
-}
-
-.team {
-    padding-bottom: 94px;
+.projects {
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
