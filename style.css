@@ -20,6 +20,17 @@
     padding-bottom: 25px;
 }
 
+.header_list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.header_inform_list {
+    display: flex;
+    gap: 50px;
+}
+
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -30,12 +41,28 @@
     padding-bottom: 94px;
 }
 
+.pros_list {
+    display: flex;
+    gap: 30px;
+}
+
 .doing {
     padding-bottom: 94px;
 }
 
+.doing_list {
+    display: flex;
+    gap: 30px;
+}
+
+
 .team {
     padding-bottom: 94px;
+}
+
+.team_list {
+    display: flex;
+    gap: 30px;
 }
 
 .footer {

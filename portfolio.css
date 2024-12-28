@@ -16,9 +16,30 @@
     padding-bottom: 25px;
 }
 
+.header_list {
+    display: flex;
+    gap: 50px;
+}
+
+.header_inform_list {
+    display: flex;
+    gap: 50px;
+}
+
 .projects {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.filters_list {
+    display: flex;
+    gap: 8px;
+}
+
+.projects_list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .footer {
