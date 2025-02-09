@@ -34,6 +34,7 @@
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-color: var(--main);
 }
 
 .pros {
@@ -41,13 +42,27 @@
     padding-bottom: 94px;
 }
 
-pros_article::before {
-    content: url(/images/index/timer.png);
-}
+
 
 .pros_list {
     display: flex;
     gap: 30px;
+}
+
+.before_satellite::before {
+    content: url(/images/index/satellite.png);
+}
+
+.before_timer::before {
+    content: url(/images/index/timer.jpg);
+}
+
+.before_analytic::before {
+    content: url(/images/index/analytic.png);
+}
+
+.before_austranaut::before {
+    content: url(/images/index/austranaut.png);
 }
 
 .doing {
@@ -62,6 +77,7 @@ pros_article::before {
 
 .team {
     padding-bottom: 94px;
+    background-color: #F5F4FA;
 }
 
 .team_list {
@@ -72,5 +88,6 @@ pros_article::before {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--main);
 }
 
