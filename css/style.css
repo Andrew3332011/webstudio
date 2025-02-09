@@ -34,7 +34,8 @@
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--main);
+    background:url(/images/index/background.png);
+    
 }
 
 .pros {
