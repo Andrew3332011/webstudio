@@ -41,6 +41,10 @@
     padding-bottom: 94px;
 }
 
+pros_article::before {
+    content: url(/images/index/timer.png);
+}
+
 .pros_list {
     display: flex;
     gap: 30px;
