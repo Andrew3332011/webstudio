@@ -1,8 +1,9 @@
 :root {
-    --second: #989898;
-    --third: #2196f3;
-    --main: #2f303a;
-    
+    --text: #989898;
+    --accent: #2196f3;
+    --background-footer: #2f303a;
+    --title: #212121;
+    --button: #2196f3;
 }
 
 .hidden {
