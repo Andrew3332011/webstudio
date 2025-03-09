@@ -5,7 +5,7 @@
     --title: #212121;
     --button: #2196f3;
     --main: 'Roboto', sans-serif;
-    --accent-text: 'Raleway';
+    --accent-text: 'Raleway', sans-serif;
 }
 
 body {
@@ -32,6 +32,7 @@ body {
 .header_container {
     display: flex;
     gap: 93px;
+    align-items: center;
 }
 
 .header_list {
@@ -86,8 +87,9 @@ body {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background: url(/images/index/background.png);
-
+    background-image: url(/images/index/background.png);
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.4);
 }
 
 .hero_title {
@@ -97,13 +99,12 @@ body {
     text-transform: uppercase;
     color: white;
     width: 696px;
-    text-align: center;
+    margin: auto;
 }
 
 .hero_button {
     border-radius: 4px;
-    width: 216px;
-    height: 50px;
+    padding: 10px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: var(--button);
     border: none;
@@ -112,6 +113,7 @@ body {
     font-size: 16px;
     line-height: 187%;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .pros {
@@ -141,6 +143,8 @@ body {
     border-radius: 4px;
     width: 270px;
     height: 120px;
+    display: block;
+    margin-bottom: 30px;
 }
 
 .before_timer::before {
@@ -148,6 +152,8 @@ body {
     border-radius: 4px;
     width: 270px;
     height: 120px;
+    display: block;
+    margin-bottom: 30px;
 }
 
 .before_analytic::before {
@@ -155,6 +161,8 @@ body {
     border-radius: 4px;
     width: 270px;
     height: 120px;
+    display: block;
+    margin-bottom: 30px;
 }
 
 .before_austranaut::before {
@@ -162,6 +170,8 @@ body {
     border-radius: 4px;
     width: 270px;
     height: 120px;
+    display: block;
+    margin-bottom: 30px;
 }
 
 .doing {
