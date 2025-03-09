@@ -1,11 +1,16 @@
 :root {
-    --text: #989898;
+    --text: #757575;
     --accent: #2196f3;
     --background-footer: #2f303a;
     --title: #212121;
     --button: #2196f3;
-    --main: 'Roboto';
+    --main: 'Roboto', sans-serif;
     --accent-text: 'Raleway';
+}
+
+body {
+    font-family: var(--main);
+    font-size: 14px;
 }
 
 .hidden {
@@ -24,22 +29,89 @@
     padding-bottom: 25px;
 }
 
+.header_container {
+    display: flex;
+    gap: 93px;
+}
+
 .header_list {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
+.header_logo {
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--title);
+    font-family: var(--accent-text);
+    text-decoration: none;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.header_link {
+    font-weight: 500;
+    color: var(--title);
+    text-decoration: none;
+}
+
+.header_link:hover {
+    color: var(--accent);
+    transition: 0.3s;
+}
+
 .header_inform_list {
     display: flex;
     gap: 50px;
+    margin-left: 250px;
 }
+
+.header_inform_link {
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.header_inform_link:hover {
+    color: var(--accent);
+    transition: 0.3s;
+}
+
+
+
 
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background:url(/images/index/background.png);
-    
+    background: url(/images/index/background.png);
+
+}
+
+.hero_title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    text-transform: uppercase;
+    color: white;
+    width: 696px;
+    text-align: center;
+}
+
+.hero_button {
+    border-radius: 4px;
+    width: 216px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: var(--button);
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    margin-top: 30px;
 }
 
 .pros {
@@ -47,7 +119,17 @@
     padding-bottom: 94px;
 }
 
+.pros_subtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--title);
+}
 
+.pros_desc {
+    line-height: 171%;
+    color: var(--text);
+    padding-top: 10px;
+}
 
 .pros_list {
     display: flex;
@@ -56,27 +138,46 @@
 
 .before_satellite::before {
     content: url(/images/index/satellite.png);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
 }
 
 .before_timer::before {
     content: url(/images/index/timer.jpg);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
 }
 
 .before_analytic::before {
     content: url(/images/index/analytic.png);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
 }
 
 .before_austranaut::before {
     content: url(/images/index/austranaut.png);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
 }
 
 .doing {
     padding-bottom: 94px;
 }
 
+.doing_title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
 .doing_list {
     display: flex;
     gap: 30px;
+    padding-top: 50px;
 }
 
 
@@ -85,14 +186,74 @@
     background-color: #F5F4FA;
 }
 
+.team_title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.team_pic {
+    width: 270px;
+    height: 260px;
+}
+
 .team_list {
     display: flex;
     gap: 30px;
 }
 
+.team_name {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: var(--title);
+    padding-top: 30px;
+}
+
+.team_employee {
+    font-size: 16px;
+    text-align: center;
+    color: #757575;
+    padding-top: 10px;
+}
+
+.team_article {
+    height: 368px;
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--main);
+    background-color: var(--background-footer);
 }
 
+.footer_logo_link {
+    font-weight: 700;
+    font-size: 26px;
+    color: white;
+    font-family: var(--accent-text);
+    text-decoration: none;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+}
+
+.footer_item {
+    line-height: 171%;
+    color: #fff;
+}
+
+.footer_link {
+    line-height: 171%;
+    color: #757575;
+    text-decoration: none;
+}
