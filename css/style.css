@@ -230,10 +230,23 @@ body {
 }
 
 .team_article {
-    height: 368px;
+    height: 428px;
     background-color: white;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.team-sm-list {
+    display: flex;
+    padding-top: 16px;
+    justify-content: space-around;
+}
+
+.sm-item:hover {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 100%;
+    
 }
 
 .footer {
