@@ -184,6 +184,30 @@ body {
     text-align: center;
 }
 
+.doing_item {
+    position: relative;
+}
+
+.doing_overlay {
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.doing_text {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 .doing_list {
     display: flex;
     gap: 30px;
@@ -246,6 +270,26 @@ body {
     background-color: var(--accent);
     border: 1px solid var(--accent);
     border-radius: 100%;
+
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-svg {
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+    width: 106px;
+height: 60px;
+  padding:16px 32px;
+  border-radius: 4px;
+  
+}
+
+.clients-title {
     
 }
 
