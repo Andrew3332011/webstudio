@@ -138,6 +138,18 @@ body {
     gap: 30px;
 }
 
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
 .before_satellite::before {
     content: url(/images/index/satellite.png);
     border-radius: 4px;
@@ -266,11 +278,20 @@ body {
     justify-content: space-around;
 }
 
-.sm-item:hover {
-    background-color: var(--accent);
-    border: 1px solid var(--accent);
-    border-radius: 100%;
 
+
+.team-svg {
+    width: 24px;
+    height: 24px;
+    fill: #AFB1B8;
+}
+
+.team-svg:hover {
+    fill: white;
+    border: 1px solid var(--accent);
+    background-color: #2196f3;
+    border-radius: 100%;
+    
 }
 
 .clients-list {
@@ -279,18 +300,33 @@ body {
     gap: 30px;
 }
 
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .clients-svg {
     border: 1px solid #AFB1B8;
     fill: #AFB1B8;
     width: 106px;
-height: 60px;
-  padding:16px 32px;
-  border-radius: 4px;
-  
+    height: 60px;
+    padding: 16px 32px;
+    border-radius: 4px;
+
+}
+
+.clients-svg:hover {
+    fill: var(--accent);
+    border: 1px solid var(--accent);
 }
 
 .clients-title {
-    
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--title);
+    padding-bottom: 50px;
 }
 
 .footer {
