@@ -166,6 +166,38 @@ body {
     padding-bottom: 20px;
 }
 
+.projects_wrapper {
+  position: relative; 
+  overflow: hidden;
+}
+
+
+
+.projects_overlay {
+  position: absolute;
+  bottom: -100%; 
+  width: 100%;
+  height: 100%;
+  background: var(--accent);
+  transition: bottom 0.4s ease;
+  display: flex;
+  justify-content: center;
+  opacity: 0.9;
+
+}
+
+.projects_desc {
+    font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+color: #fff;
+padding: 63px 24px;
+}
+
+.projects_wrapper:hover .projects_overlay {
+  bottom: 0;
+}
+
 
 .footer {
     padding-top: 60px;
