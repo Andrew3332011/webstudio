@@ -187,6 +187,30 @@ padding-left: 16px;
   flex-direction: column;
 }
 
+.modal-button {
+  background-color: var(--button);
+  color: white;
+  font-weight: 700;
+font-size: 16px;
+width: 200px;
+height: 50px;
+border: none;
+margin: auto;
+margin-top: 30px;
+}
+
+.modal-checkbox_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 20px;
+}
+
+.modal-checkbox {
+  border: 1px solid var(--title);
+
+}
+
 .pros {
   padding-top: 94px;
   padding-bottom: 94px;
