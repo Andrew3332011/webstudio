@@ -1,11 +1,55 @@
-:root {
-  --text: #757575;
-  --accent: #2196f3;
-  --background-footer: #2f303a;
-  --title: #212121;
-  --button: #2196f3;
-  --main: "Roboto", sans-serif;
-  --accent-text: "Raleway", sans-serif;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -59,7 +103,6 @@ body {
   text-decoration: none;
   position: relative;
   display: block;
-  
 }
 
 .header_link:hover {
@@ -78,9 +121,8 @@ body {
   bottom: 0;
   transform: scaleX(0);
   transform-origin: bottom;
-  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1),
-    background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    top: 40px;
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  top: 40px;
 }
 
 .header_link:hover::after {
@@ -223,6 +265,7 @@ body {
   padding-top: 12px;
   padding-left: 16px;
 }
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -391,8 +434,7 @@ body {
   height: 428px;
   background-color: white;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .team-sm-list {
@@ -409,8 +451,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
-    transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   cursor: pointer;
 }
 
@@ -448,8 +489,7 @@ body {
   height: 60px;
   padding: 16px 32px;
   border-radius: 4px;
-  transition: fill 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), border 0.6s ease,
-    transform 2s ease;
+  transition: fill 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), border 0.6s ease, transform 2s ease;
 }
 
 .clients-svg:hover {

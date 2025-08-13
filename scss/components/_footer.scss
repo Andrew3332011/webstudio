@@ -1,0 +1,31 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-footer);
+}
+
+.footer_logo_link {
+  font-weight: 700;
+  font-size: 26px;
+  color: white;
+  font-family: var(--accent-text);
+  text-decoration: none;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.footer_item {
+  line-height: 171%;
+  color: #fff;
+}
+
+.footer_link {
+  line-height: 171%;
+  color: #757575;
+  text-decoration: none;
+}
