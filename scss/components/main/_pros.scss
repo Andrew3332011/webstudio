@@ -1,0 +1,57 @@
+.pros {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $title-color;
+
+    &--satellite::before {
+      content: url("../images/index/satellite.png");
+      border-radius: 4px;
+      width: 270px;
+      height: 120px;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    &--timer::before {
+      content: url("../images/index/timer.jpg");
+      border-radius: 4px;
+      width: 270px;
+      height: 120px;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    &--analytic::before {
+      content: url("../images/index/analytic.png");
+      border-radius: 4px;
+      width: 270px;
+      height: 120px;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    &--astronaut::before {
+      content: url("../images/index/austranaut.png");
+      border-radius: 4px;
+      width: 270px;
+      height: 120px;
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__description {
+    line-height: 171%;
+    color: $text-color;
+    padding-top: 10px;
+  }
+}
