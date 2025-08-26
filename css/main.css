@@ -99,6 +99,17 @@ body {
 }
 .header__logo-accent {
   color: #2196f3;
+  animation: drop-in 2s;
+}
+@keyframes drop-in {
+  from {
+    transform: rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
 }
 .header__menu-link {
   font-weight: 500;
@@ -153,6 +164,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 .hero__title {
   font-weight: 900;
   font-size: 44px;
@@ -161,6 +180,17 @@ body {
   color: white;
   width: 696px;
   margin: auto;
+  animation: drop-in 1s;
+}
+@keyframes drop-in {
+  from {
+    transform: rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
 }
 .hero__button {
   border-radius: 4px;
@@ -174,6 +204,7 @@ body {
   line-height: 187%;
   margin-top: 30px;
   cursor: pointer;
+  animation: slide-in 1s;
 }
 
 .backdrop {
@@ -490,8 +521,19 @@ body {
 .footer__logo-accent {
   color: #2196f3;
 }
+@keyframes drop-in {
+  from {
+    transform: rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
 .footer__address {
   margin-top: 20px;
+  animation: drop-in 2s;
 }
 .footer__list {
   display: flex;

@@ -23,6 +23,20 @@
 
   &__logo-accent {
     color: $accent-color;
+    animation: drop-in 2s;
+  }
+
+  @keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
   }
 
   &__menu-link {
