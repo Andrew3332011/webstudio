@@ -86,6 +86,11 @@ body {
   align-items: center;
   gap: 93px;
 }
+@media (min-width: 768px) {
+  .header__container {
+    width: 768px;
+  }
+}
 .header__menu {
   display: flex;
   flex-direction: row;
@@ -154,6 +159,12 @@ body {
 .header__contacts-link:hover {
   color: #2196f3;
   transition: 0.3s;
+}
+@media (min-width: 768px) {
+  .header__contacts-link {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero {

@@ -5,6 +5,9 @@
   &__container {
     @include flex-center(row, flex-start, center);
     gap: 93px;
+    @media (min-width:768px) {
+      width: 768px;
+    }
   }
 
   &__menu {
@@ -88,5 +91,11 @@
       color: $accent-color;
       transition: 0.3s;
     }
+
+    // @media (min-width:768px) {
+    //   display: flex;
+    //   flex-direction: column;
+    }
   }
+
 }
