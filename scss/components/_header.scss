@@ -92,9 +92,9 @@
       transition: 0.3s;
     }
 
-    // @media (min-width:768px) {
-    //   display: flex;
-    //   flex-direction: column;
+    @media (min-width:768px) {
+      display: flex;
+      flex-direction: column;
     }
   }
 
