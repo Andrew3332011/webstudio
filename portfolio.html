@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -18,172 +17,176 @@
 
 <body>
     <!-- here we start -->
-    <header class="header">
-        <div class="header_container container">
-            <a class="header_logo" href="./index.html"><span class="accent">Web</span>Studio</a>
+   <header class="header">
+  <div class="header__container container">
+    <a class="header__logo" href="./index.html"><span class="header__logo-accent">Web</span>Studio</a>
+    <div class="header__wrapper">
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="./index.html">Студія</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="">Контакти</a>
+        </li>
+      </ul>
+    </nav>
 
-            <nav class="header_nav">
-                <ul class="header_list">
-                    <li class="header_item"><a class="header_link" href="./index.html">Студія</a></li>
-                    <li class="header_item"><a class="header_link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="header_item"><a class="header_link" href="">Контакти</a></li>
-                </ul>
-            </nav>
-
-            <ul class="header_inform_list">
-
-                <li class="header_inform_item"><a class="header_inform_link"
-                        href="mailto:info@webstudio.com">info@webstudio.com</a>
-                </li>
-                <li class="header_inform_item"><a class="header_inform_link" href="tel:+380961111111">+380 96 111 11
-                        11</a></li>
-
-            </ul>
-        </div>
-
-
-    </header>
+    <ul class="header__contacts">
+      <li class="header__contacts-item">
+        <a class="header__contacts-link" href="mailto:info@webstudio.com">info@webstudio.com</a>
+      </li>
+      <li class="header__contacts-item">
+        <a class="header__contacts-link" href="tel:+380961111111">+380 96 111 11 11</a>
+      </li>
+    </ul>
+    </div>
+  </div>
+</header>
     <!-- we finished header was not as hard as i thought -->
 
     <main class="main">
         <!-- now we are gonna start the main section which is the only one -->
         <section class="projects">
             <div class="container projects_container">
-                <ul class="filters_list">
-                    <li class="filters_item">
-                        <a class="filters_link" href="">Усі</a>
+                <ul class="projects__filters-list">
+                    <li class="projects__filters-item">
+                        <a class="projects__filters-link" href="">Усі</a>
                     </li>
-                    <li class="filters_item">
-                        <a class="filters_link" href="">Веб-сайти</a>
+                    <li class="projects__filters-item">
+                        <a class="projects__filters-link" href="">Веб-сайти</a>
                     </li>
-                    <li class="filters_item">
-                        <a class="filters_link" href="">Додатки</a>
+                    <li class="projects__filters-item">
+                        <a class="projects__filters-link" href="">Додатки</a>
                     </li>
-                    <li class="filters_item">
-                        <a class="filters_link" href="">Дизайн</a>
+                    <li class="projects__filters-item">
+                        <a class="projects__filters-link" href="">Дизайн</a>
                     </li>
-                    <li class="filters_item">
-                        <a class="filters_link" href="">Маркетинг</a>
+                    <li class="projects__filters-item">
+                        <a class="projects__filters-link" href="">Маркетинг</a>
                     </li>
                 </ul>
-                    <ul class="projects_list">
-                        <li class="projects_item">
-                            <a class="projects_inform">
-                                <div class="projects_wrapper">
-                                <img class="projects_img" src="./images/portfolio/computer.jpg" alt="computer" />
-                                <div class="projects_overlay">
-                                    <p class="projects_desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <ul class="projects__list">
+                        <li class="projects__item">
+                            <a class="projects__link">
+                                <div class="projects__wrapper">
+                                <img class="projects__img" src="./images/portfolio/computer.jpg" alt="computer" />
+                                <div class="projects__overlay">
+                                    <p class="projects__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                     </div>
                                 
-                                <h3 class="projects_name">Технокряк</h3>
-                                <p class="projects_type">Веб-сайт</p>
+                                <h3 class="projects__name">Технокряк</h3>
+                                <p class="projects__type">Веб-сайт</p>
                             </a>
                         </li>
-                        <li class="projects_item">
-                            <a class="projects_inform">
-                                <div class="projects_wrapper">
-                                <img class="projects_img" src="./images/portfolio/nba.jpg" alt="nba" />
-                                <div class="projects_overlay">
-                                    <p class="projects_desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <li class="projects__item">
+                            <a class="projects__link">
+                                <div class="projects__wrapper">
+                                <img class="projects__img" src="./images/portfolio/nba.jpg" alt="nba" />
+                                <div class="projects__overlay">
+                                    <p class="projects__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                     </div>
-                                <h3 class="projects_name">
+                                <h3 class="projects__name">
                                     Постер New Orleans vs Golden State
                                 </h3>
-                                <p class="projects_type">Дизайн</p>
+                                <p class="projects__type">Дизайн</p>
                             </a>
                         </li>
-                        <li class="projects_item">
-                            <a class="projects_inform">
-                                <div class="projects_wrapper">
-                                <img class="projects_img" src="./images/portfolio/seafood.jpg" alt="seafood" />
-                                <div class="projects_overlay">
-                                    <p class="projects_desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <li class="projects__item">
+                            <a class="projects__link">
+                                <div class="projects__wrapper">
+                                <img class="projects__img" src="./images/portfolio/seafood.jpg" alt="seafood" />
+                                <div class="projects__overlay">
+                                    <p class="projects__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                     </div>
                                 
-                                <h3 class="projects_name">Ресторан Seafood</h3>
-                                <p class="projects_type">Додаток</p>
+                                <h3 class="projects__name">Ресторан Seafood</h3>
+                                <p class="projects__type">Додаток</p>
                             </a>
                         </li>
-                        <li class="projects_item">
-                            <a class="projects_inform">
-                                <div class="projects_wrapper">
-                                 <img class="projects_img" src="./images/portfolio/headphones.jpg" alt="headphones" />
-                                <div class="projects_overlay">
-                                    <p class="projects_desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <li class="projects__item">
+                            <a class="projects__link">
+                                <div class="projects__wrapper">
+                                 <img class="projects__img" src="./images/portfolio/headphones.jpg" alt="headphones" />
+                                <div class="projects__overlay">
+                                    <p class="projects__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                     </div>
                                
-                                <h3 class="projects_name">Проєкт Prime</h3>
-                                <p class="projects_type">Маркетинг</p>
+                                <h3 class="projects__name">Проєкт Prime</h3>
+                                <p class="projects__type">Маркетинг</p>
                             </a>
                         </li>
-                        <li class="projects_item">
-                            <a class="projects_inform">
-                                 <div class="projects_wrapper">
-                                 <img class="projects_img" src="./images/portfolio/boxes.jpg" alt="boxes" />
-                                <div class="projects_overlay">
-                                    <p class="projects_desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <li class="projects__item">
+                            <a class="projects__link">
+                                 <div class="projects__wrapper">
+                                 <img class="projects__img" src="./images/portfolio/boxes.jpg" alt="boxes" />
+                                <div class="projects__overlay">
+                                    <p class="projects__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                     </div>
                                
                                 
-                                <h3 class="projects_name">Проєкт Boxes</h3>
-                                <p class="projects_type">Додаток</p>
+                                <h3 class="projects__name">Проєкт Boxes</h3>
+                                <p class="projects__type">Додаток</p>
                             </a>
                         </li>
-                        <li class="projects_item">
-                            <a class="projects_inform">
-                                <div class="projects_wrapper">
-                                  <img class="projects_img" src="./images/portfolio/noborders.jpg" alt="border project" />
-                                <div class="projects_overlay">
-                                    <p class="projects_desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <li class="projects__item">
+                            <a class="projects__link">
+                                <div class="projects__wrapper">
+                                  <img class="projects__img" src="./images/portfolio/noborders.jpg" alt="border project" />
+                                <div class="projects__overlay">
+                                    <p class="projects__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                     </div>
                                
-                                <h3 class="projects_name">Inspiration has no Borders</h3>
-                                <p class="projects_type">Веб-сайт</p>
+                                <h3 class="projects__name">Inspiration has no Borders</h3>
+                                <p class="projects__type">Веб-сайт</p>
                             </a>
                         </li>
-                        <li class="projects_item">
-                            <a class="projects_inform">
-                                <div class="projects_wrapper">
-                                  <img class="projects_img" src="./images/portfolio/book.jpg" alt="book" />
-                                <div class="projects_overlay">
-                                    <p class="projects_desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <li class="projects__item">
+                            <a class="projects__link">
+                                <div class="projects__wrapper">
+                                  <img class="projects__img" src="./images/portfolio/book.jpg" alt="book" />
+                                <div class="projects__overlay">
+                                    <p class="projects__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                     </div>
                                 
-                                <h3 class="projects_name">Видання Limited Edition</h3>
-                                <p class="projects_type">Дизайн</p>
+                                <h3 class="projects__name">Видання Limited Edition</h3>
+                                <p class="projects__type">Дизайн</p>
                             </a>
                         </li>
-                        <li class="projects_item">
-                            <a class="projects_inform">
-                                <div class="projects_wrapper">
-                                  <img class="projects_img" src="./images/portfolio/lab.jpg" alt="lab tag" />
-                                <div class="projects_overlay">
-                                    <p class="projects_desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <li class="projects__item">
+                            <a class="projects__link">
+                                <div class="projects__wrapper">
+                                  <img class="projects__img" src="./images/portfolio/lab.jpg" alt="lab tag" />
+                                <div class="projects__overlay">
+                                    <p class="projects__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                     </div>
                                
-                                <h3 class="projects_name">Проєкт LAB</h3>
-                                <p class="projects_type">Маркетинг</p>
+                                <h3 class="projects__name">Проєкт LAB</h3>
+                                <p class="projects__type">Маркетинг</p>
                             </a>
                         </li>
-                        <li class="projects_item">
-                            <a class="projects_inform">
-                                <div class="projects_wrapper">
-                                  <img class="projects_img" src="./images/portfolio/bussines.jpg" alt="business" />
-                                <div class="projects_overlay">
-                                    <p class="projects_desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        <li class="projects__item">
+                            <a class="projects__link">
+                                <div class="projects__wrapper">
+                                  <img class="projects__img" src="./images/portfolio/bussines.jpg" alt="business" />
+                                <div class="projects__overlay">
+                                    <p class="projects__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                     </div>
                                 
-                                <h3 class="projects_name">Growing Business</h3>
-                                <p class="projects_type">Додаток</p>
+                                <h3 class="projects__name">Growing Business</h3>
+                                <p class="projects__type">Додаток</p>
                             </a>
                         </li>
                     </ul>
@@ -192,24 +195,17 @@
     </main>
     <!-- we almost there -->
     <footer class="footer">
-        <div class="container footer_container">
-
-            <a class="footer_logo_link" href="./index.html"> <span class="accent">Web</span>Studio</a>
-            <address class="footer_address">
-                <ul class="footer_list">
-
-                    <li class="footer_item">м. Київ, пр-т Лесі Українки, 26</li>
-
-                    <li class="footer_item">
-                        <a class="footer_link" href="mailto:info@webstudio.com">info@webstudio.com</a>
-                    </li>
-                    <li class="footer_item">
-                        <a class="footer_link" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
-        </div>
-    </footer>
+  <div class="footer__container container">
+    <a class="footer__logo" href="./index.html"><span class="footer__logo-accent">Web</span>Studio</a>
+    <address class="footer__address">
+      <ul class="footer__list">
+        <li class="footer__item">м. Київ, пр-т Лесі Українки, 26</li>
+        <li class="footer__item"><a class="footer__link" href="mailto:info@webstudio.com">info@webstudio.com</a></li>
+        <li class="footer__item"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      </ul>
+    </address>
+  </div>
+</footer>
 </body>
 
 </html>

@@ -61,6 +61,7 @@ table {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .hidden {
@@ -73,7 +74,6 @@ body {
   margin: 0px auto;
   padding-left: 10px;
   padding-right: 10px;
-  @medi;
 }
 
 .header {
@@ -81,21 +81,9 @@ body {
   padding-bottom: 25px;
 }
 .header__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
   gap: 93px;
-}
-@media (min-width: 768px) {
-  .header__container {
-    width: 768px;
-  }
-}
-.header__menu {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+  align-items: center;
 }
 .header__logo {
   font-weight: 700;
@@ -107,6 +95,16 @@ body {
 .header__logo-accent {
   color: #2196f3;
   animation: drop-in 2s;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 @keyframes drop-in {
   from {
@@ -124,6 +122,7 @@ body {
   text-decoration: none;
   position: relative;
   display: block;
+  letter-spacing: 0.02em;
 }
 .header__menu-link:hover {
   color: #2196f3;
@@ -150,32 +149,25 @@ body {
 .header__contacts {
   display: flex;
   gap: 50px;
-  margin-left: 250px;
 }
 .header__contacts-link {
   font-weight: 500;
   color: #757575;
   text-decoration: none;
+  letter-spacing: 0.02em;
 }
 .header__contacts-link:hover {
   color: #2196f3;
   transition: 0.3s;
 }
-@media (min-width: 768px) {
-  .header__contacts-link {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url("../images/index/background.png");
   text-align: center;
-  background-color: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/background.png");
 }
 @keyframes slide-in {
   from {
@@ -191,8 +183,8 @@ body {
   line-height: 136%;
   text-transform: uppercase;
   color: white;
-  width: 696px;
-  margin: auto;
+  letter-spacing: 0.06em;
+  text-align: center;
   animation: drop-in 1s;
 }
 @keyframes drop-in {
@@ -214,10 +206,12 @@ body {
   color: white;
   font-weight: 700;
   font-size: 16px;
-  line-height: 187%;
+  line-height: 1.87;
   margin-top: 30px;
   cursor: pointer;
   animation: slide-in 1s;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.06em;
 }
 
 .backdrop {
@@ -335,6 +329,7 @@ body {
 .pros__list {
   display: flex;
   gap: 30px;
+  justify-content: space-between;
 }
 .pros__subtitle {
   text-transform: uppercase;
@@ -342,36 +337,52 @@ body {
   color: #212121;
 }
 .pros__subtitle--satellite::before {
-  content: url("../images/index/satellite.png");
+  content: "";
+  background-image: url("../images/index/antenna.png");
   border-radius: 4px;
   width: 270px;
   height: 120px;
   display: block;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
 }
 .pros__subtitle--timer::before {
-  content: url("../images/index/timer.jpg");
+  content: "";
+  background-image: url("../images/index/clock.png");
   border-radius: 4px;
   width: 270px;
   height: 120px;
   display: block;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
 }
 .pros__subtitle--analytic::before {
-  content: url("../images/index/analytic.png");
+  content: "";
+  background-image: url("../images/index/analytic.png");
   border-radius: 4px;
   width: 270px;
   height: 120px;
   display: block;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
 }
 .pros__subtitle--astronaut::before {
-  content: url("../images/index/austranaut.png");
+  content: "";
+  background-image: url("../images/index/austranaut.png");
   border-radius: 4px;
   width: 270px;
   height: 120px;
   display: block;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
 }
 .pros__description {
   line-height: 171%;
@@ -391,13 +402,13 @@ body {
   display: flex;
   gap: 30px;
   padding-top: 50px;
+  justify-content: center;
 }
 .doing__item {
   position: relative;
 }
 .doing .doing__overlay {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 370px;
@@ -418,12 +429,12 @@ body {
 .team {
   padding-bottom: 94px;
   background-color: #f5f4fa;
+  padding-top: 94px;
 }
 .team__title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 .team__photo {
@@ -433,6 +444,7 @@ body {
 .team__list {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 .team__name {
   font-weight: 500;
@@ -564,4 +576,34 @@ body {
 }
 .footer__link:hover {
   color: #2196f3;
+}
+
+.projects__filters-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-bottom: 34px;
+}
+.projects__filters-item {
+  background-color: var(--background-filter);
+  border-radius: 4px;
+  transition: background-color 2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.projects__filters-item:hover {
+  background-color: var(--button);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.projects__filters-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: var(--title);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 6px;
 }

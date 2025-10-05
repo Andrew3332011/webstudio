@@ -1,5 +1,5 @@
 @import './utils/variables';
-@import'./utils/mixin';
+// @import'./utils/mixin';
 @import './utils/placeholder';
 @import './base/reset';
 @import './base/common';
@@ -11,3 +11,4 @@
 @import './components/main/team';
 @import './components/main/clients';
 @import './components/footer';
+@import './components/portfolio/projects'

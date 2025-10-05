@@ -1,6 +1,7 @@
 body {
   font-family: $main-font;
   font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .hidden {
@@ -14,5 +15,4 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 
-  @media (max-width:)
 }

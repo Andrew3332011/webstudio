@@ -5,7 +5,10 @@
   &__list {
     display: flex;
     gap: 30px;
+    justify-content: space-between;
   }
+
+
 
   &__subtitle {
     text-transform: uppercase;
@@ -13,41 +16,59 @@
     color: $title-color;
 
     &--satellite::before {
-      content: url("../images/index/satellite.png");
+      content: '';
+      background-image: url("../images/index/antenna.png");
       border-radius: 4px;
       width: 270px;
       height: 120px;
       display: block;
       margin-bottom: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color:  $background_filter-color;
     }
 
     &--timer::before {
-      content: url("../images/index/timer.jpg");
+      content: '';
+      background-image: url("../images/index/clock.png");
       border-radius: 4px;
       width: 270px;
       height: 120px;
       display: block;
       margin-bottom: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color:  $background_filter-color;
     }
 
     &--analytic::before {
-      content: url("../images/index/analytic.png");
+      content: '';
+      background-image: url("../images/index/analytic.png");
       border-radius: 4px;
       width: 270px;
       height: 120px;
       display: block;
       margin-bottom: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color:  $background_filter-color;
     }
 
     &--astronaut::before {
-      content: url("../images/index/austranaut.png");
+      content: '';
+      background-image: url("../images/index/austranaut.png");
       border-radius: 4px;
       width: 270px;
       height: 120px;
       display: block;
       margin-bottom: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color:  $background_filter-color;
     }
   }
+
+
 
   &__description {
     line-height: 171%;

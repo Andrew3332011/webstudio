@@ -1,0 +1,36 @@
+.projects {
+  &__filters-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-bottom: 34px;
+  }
+
+  &__filters-item {
+    background-color: var(--background-filter);
+    border-radius: 4px;
+    transition: background-color 2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      box-shadow 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+      background-color: var(--button);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+        0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__filters-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: var(--title);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+  }
+}
