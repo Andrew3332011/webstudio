@@ -63,10 +63,12 @@
     position: relative;
     overflow: hidden;
 
-    &:hover {
-      bottom: 0;   
+  &:hover {
+    &__overlay {
+      bottom: 0;
     }
   }
+}
 
   &__overlay {
     position: absolute;
@@ -79,9 +81,7 @@
     justify-content: center;
     opacity: 0.9;
 
-    &:hover {
-      bottom: 0;
-    }
+    
   }
 
   &__desc {  

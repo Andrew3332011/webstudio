@@ -160,6 +160,11 @@ body {
   color: #2196f3;
   transition: 0.3s;
 }
+.header__icon {
+  width: 50px;
+  height: 50px;
+  color: black;
+}
 
 .hero {
   padding-top: 200px;
@@ -632,7 +637,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.projects__wrapper:hover {
+.projects__wrapper:hover__overlay {
   bottom: 0;
 }
 .projects__overlay {
@@ -645,9 +650,6 @@ body {
   display: flex;
   justify-content: center;
   opacity: 0.9;
-}
-.projects__overlay:hover {
-  bottom: 0;
 }
 .projects__desc {
   font-size: 18px;
