@@ -20,6 +20,10 @@
     color: $title-color;
     font-family: $accent-font;
     text-decoration: none;
+    letter-spacing: 0.03em;
+    @media (max-width:738px) {
+      font-size: 24px;
+    }
   }
 
   &__logo-accent {
@@ -89,7 +93,11 @@
 
   &__contacts {
     display: flex;
-    gap: 50px;
+    gap: 30px;
+    align-items: center;
+    @media (max-width:738px) {
+      flex-direction: column;
+    }
   }
 
   &__contacts-link {
@@ -97,15 +105,23 @@
     color: $text-color;
     text-decoration: none;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    @media (max-width:738px) {
+      font-size: 12px;
+    }
 
-    &:hover {
+    &:hover  { 
+      .header__contacts-icon {
+        fill: $accent-color;
+
+      }
       color: $accent-color;
       transition: 0.3s;
     }
   }
- &__icon {
-  width: 50px;
-  height: 50px;
-  color: black;
+ &__contacts-icon {
+  fill: $text-color;
+  margin-right: 10px;
  }
 }

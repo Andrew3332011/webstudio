@@ -91,6 +91,12 @@ body {
   color: #212121;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 738px) {
+  .header__logo {
+    font-size: 24px;
+  }
 }
 .header__logo-accent {
   color: #2196f3;
@@ -148,22 +154,37 @@ body {
 }
 .header__contacts {
   display: flex;
-  gap: 50px;
+  gap: 30px;
+  align-items: center;
+}
+@media (max-width: 738px) {
+  .header__contacts {
+    flex-direction: column;
+  }
 }
 .header__contacts-link {
   font-weight: 500;
   color: #757575;
   text-decoration: none;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 738px) {
+  .header__contacts-link {
+    font-size: 12px;
+  }
 }
 .header__contacts-link:hover {
   color: #2196f3;
   transition: 0.3s;
 }
-.header__icon {
-  width: 50px;
-  height: 50px;
-  color: black;
+.header__contacts-link:hover .header__contacts-icon {
+  fill: #2196f3;
+}
+.header__contacts-icon {
+  fill: #757575;
+  margin-right: 10px;
 }
 
 .hero {
