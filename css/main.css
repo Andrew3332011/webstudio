@@ -174,6 +174,11 @@ body {
   background-size: cover;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/background.png");
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/index/background-desctop@2x.png);
+  }
+}
 @keyframes slide-in {
   from {
     transform: translateX(-100%);
