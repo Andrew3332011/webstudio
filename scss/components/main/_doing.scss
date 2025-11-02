@@ -1,5 +1,8 @@
 .doing {
   padding-bottom: 94px;
+  @media (max-width:738px) {
+    display: none;
+  }
 
   &__title {
     font-weight: 700;

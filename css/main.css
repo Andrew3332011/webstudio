@@ -218,6 +218,11 @@ body {
   text-align: center;
   animation: drop-in 1s;
 }
+@media (max-width: 738px) {
+  .hero__title {
+    font-size: 26px;
+  }
+}
 @keyframes drop-in {
   from {
     transform: rotate(-30deg) translateY(-100%);
@@ -243,6 +248,11 @@ body {
   animation: slide-in 1s;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.06em;
+}
+@media (max-width: 738px) {
+  .hero__button {
+    padding: 10px 24px;
+  }
 }
 
 .backdrop {
@@ -362,10 +372,39 @@ body {
   gap: 30px;
   justify-content: space-between;
 }
+@media (max-width: 738px) {
+  .pros__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .pros__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 738px) {
+  .pros__item {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  .pros__item {
+    width: 100%;
+  }
+}
 .pros__subtitle {
   text-transform: uppercase;
   font-weight: 700;
   color: #212121;
+}
+@media (max-width: 450px) {
+  .pros__subtitle {
+    text-align: center;
+  }
 }
 .pros__subtitle--satellite::before {
   content: "";
@@ -379,6 +418,18 @@ body {
   background-position: center;
   background-color: #f5f4fa;
 }
+@media (max-width: 738px) {
+  .pros__subtitle--satellite::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media (max-width: 450px) {
+  .pros__subtitle--satellite::before {
+    width: 450px;
+    height: 120px;
+  }
+}
 .pros__subtitle--timer::before {
   content: "";
   background-image: url("../images/index/clock.png");
@@ -390,6 +441,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
+}
+@media (max-width: 738px) {
+  .pros__subtitle--timer::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media (max-width: 450px) {
+  .pros__subtitle--timer::before {
+    width: 450px;
+    height: 120px;
+  }
 }
 .pros__subtitle--analytic::before {
   content: "";
@@ -403,6 +466,18 @@ body {
   background-position: center;
   background-color: #f5f4fa;
 }
+@media (max-width: 738px) {
+  .pros__subtitle--analytic::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media (max-width: 450px) {
+  .pros__subtitle--analytic::before {
+    width: 450px;
+    height: 120px;
+  }
+}
 .pros__subtitle--astronaut::before {
   content: "";
   background-image: url("../images/index/austranaut.png");
@@ -415,14 +490,41 @@ body {
   background-position: center;
   background-color: #f5f4fa;
 }
+@media (max-width: 738px) {
+  .pros__subtitle--astronaut::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media (max-width: 450px) {
+  .pros__subtitle--astronaut::before {
+    width: 450px;
+    height: 120px;
+  }
+}
 .pros__description {
   line-height: 171%;
   color: #757575;
   padding-top: 10px;
 }
+@media (max-width: 738px) {
+  .pros__description {
+    width: 354px;
+  }
+}
+@media (max-width: 450px) {
+  .pros__description {
+    width: auto;
+  }
+}
 
 .doing {
   padding-bottom: 94px;
+}
+@media (max-width: 738px) {
+  .doing {
+    display: none;
+  }
 }
 .doing__title {
   font-weight: 700;
@@ -468,14 +570,47 @@ body {
   text-align: center;
   padding-bottom: 50px;
 }
+@media (max-width: 738px) {
+  .team__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 738px) {
+  .team__item {
+    width: calc(50% - 15px);
+    display: flex;
+  }
+}
+@media (max-width: 450px) {
+  .team__item {
+    width: 100%;
+  }
+}
 .team__photo {
   width: 270px;
   height: 260px;
+}
+@media (max-width: 738px) {
+  .team__photo {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media (max-width: 450px) {
+  .team__photo {
+    width: 450px;
+    height: 460px;
+  }
 }
 .team__list {
   display: flex;
   gap: 30px;
   justify-content: center;
+}
+@media (max-width: 738px) {
+  .team__list {
+    flex-wrap: wrap;
+  }
 }
 .team__name {
   font-weight: 500;
@@ -493,10 +628,21 @@ body {
 .team__card {
   height: 428px;
 }
+@media (max-width: 378px) {
+  .team__card {
+    height: 536px;
+  }
+}
+@media (max-width: 450px) {
+  .team__card {
+    height: 622px;
+  }
+}
 .team__social-list {
   display: flex;
   padding-top: 16px;
-  justify-content: space-around;
+  gap: 10px;
+  justify-content: center;
 }
 .team__social-item {
   width: 44px;
@@ -535,13 +681,39 @@ body {
   color: #212121;
   padding-bottom: 50px;
 }
+@media (max-width: 738px) {
+  .clients__title {
+    font-size: 28px;
+  }
+}
 .clients__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
+@media (max-width: 738px) {
+  .clients__list {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  .clients__list {
+    flex-wrap: wrap;
+  }
+}
 .clients__item {
   list-style: none;
+}
+@media (max-width: 738px) {
+  .clients__item {
+    width: calc(33.333% - 20px);
+    display: flex;
+  }
+}
+@media (max-width: 450px) {
+  .clients__item {
+    width: calc(50% - 15px);
+  }
 }
 .clients__icon {
   border: 1px solid #afb1b8;
@@ -556,6 +728,16 @@ body {
   fill: #2196f3;
   border: 1px solid #2196f3;
   transform: scale(1);
+}
+@media (max-width: 738px) {
+  .clients__icon {
+    width: 226px;
+  }
+}
+@media (max-width: 450px) {
+  .clients__icon {
+    width: 210px;
+  }
 }
 
 .footer {
