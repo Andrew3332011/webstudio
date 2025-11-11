@@ -1,9 +1,3 @@
-.team__card {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -151,6 +145,64 @@ body {
 .header__menu-link:hover::after {
   transform: scaleX(1);
   background-color: #2196f3;
+}
+.header__input {
+  display: none;
+}
+@media (max-width: 450px) {
+  .header__label {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    position: relative;
+  }
+  .header__label .header__btn {
+    top: 10px;
+  }
+  .header__label .header__btn::before {
+    top: -8px;
+  }
+  .header__label .header__btn::after {
+    top: 8px;
+  }
+  .header__label .header__btn, .header__label .header__btn::before, .header__label .header__btn::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__input[type=checkbox]:checked ~ .header__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header .nav-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(101, 143, 143);
+  }
+  .header input[type=checkbox]:checked ~ label span {
+    transform: rotate(-45deg);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .header input[type=checkbox]:checked ~ label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  .header input[type=checkbox]:checked ~ label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
 }
 .header__contacts {
   display: flex;
@@ -575,10 +627,16 @@ body {
     font-size: 28px;
   }
 }
+.team__item {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
 @media (max-width: 738px) {
   .team__item {
-    width: calc(50% - 15px);
+    flex-basis: calc((100% - 30px) / 2);
     display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 450px) {
@@ -625,24 +683,12 @@ body {
   color: #757575;
   padding-top: 10px;
 }
-.team__card {
-  height: 428px;
-}
-@media (max-width: 378px) {
-  .team__card {
-    height: 536px;
-  }
-}
-@media (max-width: 450px) {
-  .team__card {
-    height: 622px;
-  }
-}
 .team__social-list {
   display: flex;
   padding-top: 16px;
   gap: 10px;
   justify-content: center;
+  padding-bottom: 30px;
 }
 .team__social-item {
   width: 44px;

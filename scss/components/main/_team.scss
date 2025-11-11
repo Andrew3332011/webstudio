@@ -8,17 +8,22 @@
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
-    @media (max-width:738px) {
+    @media (max-width: 738px) {
       font-size: 28px;
     }
   }
 
   &__item {
-     @media (max-width: 738px) {
-      width: calc(50% - 15px);
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    @media (max-width: 738px) {
+      flex-basis: calc((100% - 30px)/2);
       display: flex;
+      justify-content: center;
     }
-    @media (max-width:450px) {
+    @media (max-width: 450px) {
       width: calc(100%);
     }
   }
@@ -26,13 +31,13 @@
   &__photo {
     width: 270px;
     height: 260px;
-    @media (max-width:738px) {
+    @media (max-width: 738px) {
       width: 354px;
       height: 374px;
     }
-    @media (max-width:450px) {
-      width:450px;
-      height:460px;
+    @media (max-width: 450px) {
+      width: 450px;
+      height: 460px;
     }
   }
 
@@ -40,7 +45,7 @@
     display: flex;
     gap: 30px;
     justify-content: center;
-    @media (max-width:738px) {
+    @media (max-width: 738px) {
       flex-wrap: wrap;
     }
   }
@@ -61,14 +66,6 @@
   }
 
   &__card {
-    height: 428px;
-     @extend %card;
-     @media (max-width:378px) {
-      height: 536px;
-     }
-     @media (max-width:450px) {
-        height: 622px;
-      }
   }
 
   &__social-list {
@@ -76,6 +73,7 @@
     padding-top: 16px;
     gap: 10px;
     justify-content: center;
+    padding-bottom: 30px;
   }
 
   &__social-item {
@@ -86,8 +84,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 
-      background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
       transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     cursor: pointer;
 
@@ -108,4 +105,3 @@
     }
   }
 }
-
