@@ -184,6 +184,11 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+  .header__input[type=checkbox]:checked ~ .header__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .header .nav-list {
     position: absolute;
     top: 0;
@@ -213,6 +218,16 @@ body {
 @media (max-width: 738px) {
   .header__contacts {
     flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  .header__contacts {
+    display: none;
+  }
+  .header__contacts__input[type=checkbox]:checked ~ .header__contacts__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .header__contacts-link {
