@@ -18,34 +18,43 @@
 <body>
     <!-- here we start -->
    <header class="header">
-  <div class="header__container container">
-    <a class="header__logo" href="./index.html"><span class="header__logo-accent">Web</span>Studio</a>
-    <div class="header__wrapper">
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="./index.html">Студія</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="">Контакти</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__container container">
+      <a class="header__logo" href="./index.html"><span class="header__logo-accent">Web</span>Studio</a>
+      <div class="header__wrapper">
+        <nav class="header__nav">
+          <input class="header__input" id="toggle" type="checkbox">
+        <label class="header__label" for="toggle"><span class="header__btn"></span></label>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="./index.html">Студія</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
 
-    <ul class="header__contacts">
-      <li class="header__contacts-item">
-        <a class="header__contacts-link" href="mailto:info@webstudio.com">info@webstudio.com</a>
-      </li>
-      <li class="header__contacts-item">
-        <a class="header__contacts-link" href="tel:+380961111111">+380 96 111 11 11</a>
-      </li>
-    </ul>
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+
+            <a class="header__contacts-link" href="mailto:info@webstudio.com"><svg width="16" height="12"
+                class="header__contacts-icon">
+                <use href="./images/index/symbol-defs.svg#icon-email"></use>
+              </svg> info@webstudio.com </a>
+          </li>
+          <li class="header__contacts-item">
+            <a class="header__contacts-link" href="tel:+380961111111"><svg width="10" height="16"
+                class="header__contacts-icon">
+                <use href="./images/index/symbol-defs.svg#icon-smartphone"></use>
+              </svg>+380 96 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
     <!-- we finished header was not as hard as i thought -->
 
     <main class="main">

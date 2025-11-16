@@ -23,7 +23,7 @@
       <div class="header__wrapper">
         <nav class="header__nav">
           <input class="header__input" id="toggle" type="checkbox">
-        <label class="header__label" for="toggle"><span class="header__btn"></span></label>
+          <label class="header__label" for="toggle"><span class="header__btn"></span></label>
           <ul class="header__menu">
             <li class="header__menu-item">
               <a class="header__menu-link" href="./index.html">Студія</a>
@@ -281,14 +281,45 @@
 
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo" href="./index.html"><span class="footer__logo-accent">Web</span>Studio</a>
-      <address class="footer__address">
-        <ul class="footer__list">
-          <li class="footer__item">м. Київ, пр-т Лесі Українки, 26</li>
-          <li class="footer__item"><a class="footer__link" href="mailto:info@webstudio.com">info@webstudio.com</a></li>
-          <li class="footer__item"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <div class="footer__wrapper">
+        <a class="footer__logo" href="./index.html"><span class="footer__logo-accent">Web</span>Studio</a>
+        <address class="footer__address">
+          <ul class="footer__list">
+            <li class="footer__item">м. Київ, пр-т Лесі Українки, 26</li>
+            <li class="footer__item"><a class="footer__link" href="mailto:info@webstudio.com">info@webstudio.com</a>
+            </li>
+            <li class="footer__item"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer__wrapper">
+        <p class="footer__convince">приєднуйтесь</p>
+        <ul class="footer__icons">
+          <li class="footer__social-item"><svg class="footer__social-icon">
+              <use href="./images/index/symbol-defs.svg#icon-instagram"></use>
+            </svg></li>
+          <li class="footer__social-item"><svg class="footer__social-icon">
+              <use href="./images/index/symbol-defs.svg#icon-twitter"></use>
+            </svg></li>
+          <li class="footer__social-item"><svg class="footer__social-icon">
+              <use href="./images/index/symbol-defs.svg#icon-facebook"></use>
+            </svg></li>
+          <li class="footer__social-item"><svg class="footer__social-icon">
+              <use href="./images/index/symbol-defs.svg#icon-linkedin"></use>
+            </svg></li>
         </ul>
-      </address>
+      </div>
+
+      <div class="footer__wrapper">
+        <form action="" class="footer__form">
+          <label class="footer__label" for="footer_input">Підпишіться на розсилку</label>
+          <input id="footer_input" type="email" placeholder="E-mail" class="footer__input">
+          <button class="footer__button">
+            Підписатися<svg class="footer__social-icon">
+              <use href="./images/index/symbol-defs.svg#icon-send"></use>
+            </svg></button>
+        </form>
+      </div>
     </div>
   </footer>
 

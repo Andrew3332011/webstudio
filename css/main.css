@@ -73,6 +73,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header__container {
   gap: 93px;
@@ -794,6 +795,8 @@ body {
 .footer__container {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__logo {
   font-weight: 700;
@@ -835,6 +838,56 @@ body {
 }
 .footer__link:hover {
   color: #2196f3;
+}
+.footer__convince {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+.footer__icons {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+.footer__social-icon {
+  height: 20px;
+  width: 20px;
+  fill: white;
+}
+.footer__social-item {
+  border-radius: 100%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer__social-item:hover {
+  background-color: #2196f3;
+}
+.footer__label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 20px;
+}
+.footer__input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  width: 358px;
+}
+.footer__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  border: none;
+  padding: 10px 28px;
+  color: white;
+}
+.footer__social-icon {
+  height: 24px;
+  width: 24px;
 }
 
 .projects {
@@ -879,6 +932,16 @@ body {
   flex-wrap: wrap;
   width: 1170px;
 }
+@media (max-width: 738px) {
+  .projects__list {
+    width: 738px;
+  }
+}
+@media (max-width: 450px) {
+  .projects__list {
+    width: 450px;
+  }
+}
 .projects__item {
   border: 1px solid #eee;
   transition: box-shadow 1s ease-in-out;
@@ -886,6 +949,18 @@ body {
 .projects__item:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   transition: 0.3;
+}
+@media (max-width: 738px) {
+  .projects__item {
+    width: 354px;
+    height: 440px;
+  }
+}
+@media (max-width: 450px) {
+  .projects__item {
+    width: 450px;
+    height: 404px;
+  }
 }
 .projects__wrapper {
   position: relative;
