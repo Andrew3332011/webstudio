@@ -28,16 +28,17 @@
   left: 50%;
   min-width: 528px;
   min-height: 581px;
-  padding: 15px;
+  padding: 15px 40px;
   transform: translate(-50%, -50%);
   background-color: #fff;
 
+
   &__close {
     border-radius: 50px;
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
     border: 1px solid whitesmoke;
-    background-color: transparent;
+    
     margin-left: auto;
     display: block;
   }
@@ -48,7 +49,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: $title-color;
-    padding-top: 40px;
+    padding-top: 2px;
     padding-bottom: 12px;
   }
 
@@ -63,19 +64,32 @@
     color: $text-color;
     padding-bottom: 4px;
     padding-top: 12px;
-    padding-left: 40px;
+    display: block;
   }
 
   &__input {
     width: 448px;
     height: 48px;
-    border: 1px solid $text-color;
-    margin: auto;
+    border: 1px solid $input-border;
     border-radius: 4px;
   }
 
+  &__wrapper {
+  position: relative;
+  
+  
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+   left: 12px;
+   bottom: 14px;
+  }
+
   &__textarea {
-    border: 1px solid $text-color;
+    border: 1px solid $input-border;
     border-radius: 4px;
     width: 448px;
     height: 120px;
@@ -85,6 +99,8 @@
     letter-spacing: 0.01em;
     padding-top: 12px;
     padding-left: 16px;
+    resize: none;
+    font-family: $main-font;
   }
 
   &__checkbox-wrapper {
@@ -92,14 +108,16 @@
     justify-content: center;
     gap: 8px;
     padding-top: 20px;
+    align-items: center;
   }
 
   &__checkbox {
     border: 1px solid $title-color;
+    accent-color: $button-color;
   }
 
   &__terms {
-    color: var(--button);
+    color: $button-color;
     cursor: pointer;
     text-decoration: underline;
   }

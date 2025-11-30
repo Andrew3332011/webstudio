@@ -66,25 +66,40 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close class="modal__close">&#10005;</button>
+        <svg data-modal-close class="modal__close">
+              <use href="./images/index/symbol-defs.svg#icon-cancel"></use>
+            </svg>
         <form class="modal__form" action="">
           <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
 
-          <label class="modal__label" for="name">Ім'я</label>
-          <input id="name" class="modal__input" type="text" />
-
-          <label class="modal__label" for="phone">Телефон</label>
-          <input id="phone" class="modal__input" type="text" />
-
-          <label class="modal__label" for="mail">Пошта</label>
-          <input id="mail" class="modal__input" type="text" />
+          <div class="modal__wrapper">
+            <svg class="modal__icon">
+              <use href="./images/index/symbol-defs.svg#icon-abonent"></use>
+            </svg>
+            <label class="modal__label" for="name">Ім'я</label>
+            <input id="name" class="modal__input" type="text" />
+          </div>
+          <div class="moda__wrapper">
+            <svg class="modal__icon">
+              <use href="./images/index/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <label class="modal__label" for="phone">Телефон</label>
+            <input id="phone" class="modal__input" type="text" />
+          </div>
+          <div class="modal__wrapper">
+            <svg class="modal__icon">
+              <use href="./images/index/symbol-defs.svg#icon-modal-envelope"></use>
+            </svg>
+            <label class="modal__label" for="mail">Пошта</label>
+            <input id="mail" class="modal__input" type="text" />
+          </div>
 
           <label class="modal__label" for="comment">Коментар</label>
           <textarea class="modal__textarea" placeholder="Введіть текст" id="comment"></textarea>
 
           <div class="modal__checkbox-wrapper">
             <input type="checkbox" class="modal__checkbox" id="modal-checkbox" />
-            <label for="modal-checkbox">
+            <label cl for="modal-checkbox">
               Погоджуюся з розсилкою та приймаю
               <span class="modal__terms">Умови договору</span>
             </label>
