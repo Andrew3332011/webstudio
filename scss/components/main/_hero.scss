@@ -27,7 +27,7 @@
   &__title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 136%;
+    line-height: 1.36;
     text-transform: uppercase;
     color: white;
     letter-spacing: 0.06em;
@@ -36,6 +36,7 @@
     @media (max-width:738px) {
       font-size: 26px;
     }
+
   }
 
   @keyframes drop-in {

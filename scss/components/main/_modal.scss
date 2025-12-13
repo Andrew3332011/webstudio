@@ -28,19 +28,30 @@
   left: 50%;
   min-width: 528px;
   min-height: 581px;
-  padding: 15px 40px;
+  padding: 40px;
   transform: translate(-50%, -50%);
   background-color: #fff;
 
 
   &__close {
     border-radius: 50px;
-    width: 18px;
-    height: 18px;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    display: flex;
+    background-color: transparent;
+    position: absolute;
+    right: 8px;
+    top: 8px;
     
-    margin-left: auto;
-    display: block;
+
+    &:hover {
+      fill: $button-color;
+    }
+  }
+
+  &__close-icon {
+    width: 11px;
+    height: 11px;
   }
 
   &__title {
@@ -49,7 +60,6 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: $title-color;
-    padding-top: 2px;
     padding-bottom: 12px;
   }
 
@@ -72,11 +82,28 @@
     height: 48px;
     border: 1px solid $input-border;
     border-radius: 4px;
+    outline: none;
+    padding-left: 42px;
+
+    &:hover+.modal__icon {
+    fill: $button-color;
+    }
+
+    &:hover {
+    border: 1px solid $button-color;
   }
+
+  &:focus+.modal__icon {
+    fill: $button-color;
+    }
+
+    &:focus {
+    border: 1px solid $button-color;
+  }
+}
 
   &__wrapper {
   position: relative;
-  
   
   }
 
@@ -86,6 +113,7 @@
     position: absolute;
    left: 12px;
    bottom: 14px;
+   
   }
 
   &__textarea {
@@ -132,5 +160,10 @@
     border: none;
     margin: auto;
     margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+      cursor: pointer;
+    }
   }
+
 }
