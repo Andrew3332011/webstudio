@@ -356,6 +356,12 @@ body {
   transform: translate(-50%, -50%);
   background-color: #fff;
 }
+@media (max-width: 738px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
 .modal__close {
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -380,6 +386,11 @@ body {
   text-align: center;
   color: #212121;
   padding-bottom: 12px;
+}
+@media (max-width: 738px) {
+  .modal__title {
+    line-height: 1.5;
+  }
 }
 .modal__form {
   display: flex;
