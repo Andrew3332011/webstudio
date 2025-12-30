@@ -8,7 +8,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    @media (max-width:738px) {
+    @media (max-width: 738px) {
       flex-wrap: wrap;
       justify-content: center;
       gap: 165px;
@@ -22,7 +22,7 @@
     font-family: $accent-font;
     text-decoration: none;
     letter-spacing: 0.03em;
-    @media (max-width:738px) {
+    @media (max-width: 738px) {
       text-align: center;
       font-size: 24px;
     }
@@ -30,19 +30,15 @@
     &-accent {
       color: $accent-color;
     }
-
-    
   }
 
-@keyframes drop-in {
+  @keyframes drop-in {
     from {
-      transform:
-        rotate(-30deg) translateY(-100%);
+      transform: rotate(-30deg) translateY(-100%);
       opacity: 0;
     }
     to {
-      transform:
-        rotate(0deg) translateY(0%);
+      transform: rotate(0deg) translateY(0%);
       opacity: 1;
     }
   }
@@ -50,7 +46,7 @@
   &__address {
     margin-top: 20px;
     animation: drop-in 2s;
-    @media (max-width:738px) {
+    @media (max-width: 738px) {
       text-align: center;
     }
   }
@@ -94,7 +90,7 @@
   &__social-icon {
     height: 20px;
     width: 20px;
-    
+
     fill: white;
   }
 
@@ -108,16 +104,13 @@
     }
   }
 
- 
-  
-
-  &__label {
+  &__subscribe {
     display: block;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
     padding-bottom: 20px;
-    @media (max-width:738px) {
+    @media (max-width: 738px) {
       text-align: center;
     }
   }
@@ -125,12 +118,13 @@
   &__input {
     background-color: transparent;
     border: 1px solid $footer-input;
-    padding: 15px;
+    padding:15px;
     width: 358px;
-   @media (max-width:438px) {
-    width: 450px;
-   }
-   
+    outline: none;
+    @media (max-width: 438px) {
+      width: 450px;
+
+    }
   }
 
   &__button {
@@ -140,24 +134,26 @@
     letter-spacing: 0.06em;
     background-color: $button-color;
     border: none;
-    padding:10px 28px;
+    padding: 10px 28px;
     color: white;
-    height: 50px;
-    @media (max-width:738px) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 738px) {
       display: block;
       margin: auto;
       margin-top: 20px;
-      
     }
-    
   }
-
-  
 
   &__social-icon {
     height: 24px;
     width: 24px;
-    
+  }
+
+  &__form {
+    text-align: center;
+    display: flex;
+    gap: 12px;
   }
 }
-

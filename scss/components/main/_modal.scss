@@ -137,6 +137,10 @@
     padding-left: 16px;
     resize: none;
     font-family: $main-font;
+    outline: none;
+    &:focus {
+       border: 1px solid $button-color;
+    }
   }
 
   &__checkbox-wrapper {
