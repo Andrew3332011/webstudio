@@ -15,22 +15,7 @@
     }
   }
 
-  &__logo {
-    font-weight: 700;
-    font-size: 26px;
-    color: white;
-    font-family: $accent-font;
-    text-decoration: none;
-    letter-spacing: 0.03em;
-    @media (max-width: 738px) {
-      text-align: center;
-      font-size: 24px;
-    }
-
-    &-accent {
-      color: $accent-color;
-    }
-  }
+ 
 
   @keyframes drop-in {
     from {
@@ -63,7 +48,7 @@
   }
 
   &__link {
-    line-height: 171%;
+    line-height: 1.71;
     color: $text-color;
     text-decoration: none;
 
@@ -85,6 +70,8 @@
     display: flex;
     gap: 10px;
     padding-top: 20px;
+   
+    
   }
 
   &__social-icon {
@@ -98,10 +85,14 @@
     border-radius: 100%;
     padding: 12px;
     background-color: $icon-accent;
-
+    
     &:hover {
       background-color: $button-color;
     }
+  }
+
+  &__social-link {
+    display: flex;
   }
 
   &__subscribe {
@@ -121,31 +112,13 @@
     padding:15px;
     width: 358px;
     outline: none;
+    color: $footer-input;
     @media (max-width: 438px) {
       width: 450px;
-
     }
   }
 
-  &__button {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    background-color: $button-color;
-    border: none;
-    padding: 10px 28px;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    @media (max-width: 738px) {
-      display: block;
-      margin: auto;
-      margin-top: 20px;
-    }
-  }
-
+  
   &__social-icon {
     height: 24px;
     width: 24px;

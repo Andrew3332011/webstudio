@@ -1,0 +1,43 @@
+.button {
+    color: $second_accent-color;
+    border: none;
+    font-family: $main-font;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: $button-color;
+    line-height: 1.87;
+    animation: slide-in 1s;
+    font-size: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-block: 10px;
+    letter-spacing: 0.06em;
+
+
+
+
+&--hero {
+    padding-inline: 32px;
+     @media (max-width:738px) {
+      padding: 10px 24px;
+    }
+}
+
+&--modal {
+    padding-inline: 52px;
+    margin: auto;
+}
+
+&--footer {
+    padding-inline: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 738px) {
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+    }
+}
+}
+

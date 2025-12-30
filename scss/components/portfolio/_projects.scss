@@ -39,7 +39,12 @@
     &:hover {
       color: white;
     }
+    &--all {
+      padding: 6px 25px;
+    }
   }
+
+  
 
   &__list {
     display: flex;

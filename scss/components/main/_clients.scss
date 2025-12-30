@@ -2,17 +2,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
-  &__title {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: $title-color;
-    padding-bottom: 50px;
-    @media (max-width: 738px) {
-      font-size: 28px;
-    }
-  }
+ 
 
   &__list {
     display: flex;
@@ -43,13 +33,7 @@
     fill: #afb1b8;
     width: 106px;
     height: 60px;
-    &:hover {
-      fill: $accent-color;
-      
-      transform: scale(1);
-      
-
-    }
+    
     @media (max-width:738px) {
       width: 226px;
     }
@@ -62,6 +46,11 @@
     padding: 16px 32px;
      border: 1px solid #afb1b8;
       border-radius: 4px;
-      
+      &:hover {
+        border:1px solid $accent-color;
+        .clients__icon {
+          fill: $accent-color;
+        }
+      }
   }
 }

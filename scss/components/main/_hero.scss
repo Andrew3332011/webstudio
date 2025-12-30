@@ -33,6 +33,7 @@
     letter-spacing: 0.06em;
     text-align: center;
     animation: drop-in 1s;
+    margin-bottom: 30px;
     @media (max-width:738px) {
       font-size: 26px;
     }
@@ -50,23 +51,5 @@
     }
   }
 
-  &__button {
-    border-radius: 4px;
-    padding: 10px 32px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: $button-color;
-    border: none;
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    margin-top: 30px;
-    cursor: pointer;
-    animation: slide-in 1s;
-    font-family: $main-font;
-    letter-spacing: 0.06em;
-    @media (max-width:738px) {
-      padding: 10px 24px;
-    }
-  }
+  
 }

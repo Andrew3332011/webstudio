@@ -1,0 +1,11 @@
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $title-color;
+    padding-bottom: 50px;
+    @media (max-width: 738px) {
+      font-size: 28px;
+    }
+}
