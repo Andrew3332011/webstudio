@@ -322,14 +322,35 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../images/index/background-desctop@1x.png);
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/background.png");
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/index/background-desctop@2x.png);
+  }
+}
+@media screen and (max-width: 738px) {
+  .hero {
+    background-image: url(../images/index/background-tablet@1x.png);
+  }
+}
+@media screen and (max-width: 738px) and (min-device-pixel-ratio: 2), screen and (max-width: 738px) and (min-resolution: 192dpi), screen and (max-width: 738px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/index/background-tablet@2x.png);
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero {
+    background-image: url(../img/hero/background-phone@1x.png);
+  }
+}
+@media screen and (max-width: 450px) and (min-device-pixel-ratio: 2), screen and (max-width: 450px) and (min-resolution: 192dpi), screen and (max-width: 450px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero/background-phone@2x.png);
   }
 }
 @keyframes slide-in {
@@ -537,7 +558,7 @@ body {
 }
 @media (max-width: 738px) {
   .pros__item {
-    width: calc(50% - 15px);
+    width: calc((100% - 30px) / 2);
     display: flex;
     flex-direction: column;
   }

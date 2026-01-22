@@ -1,19 +1,26 @@
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
+  background-image: url(../images/index/background-desctop@1x.png);
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/index/background.png");
-    @media(min-device-pixel-ratio:2), (min-resolution:192dpi), (min-resolution:2dppx){
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    @media (min-device-pixel-ratio:2), (min-resolution:192dpi), (min-resolution:2dppx){
     background-image: url(../images/index/background-desctop@2x.png);
-  }
+    }
+    @media screen and (max-width:738px) {
+    background-image: url(../images/index/background-tablet@1x.png);
+  
+  @media(min-device-pixel-ratio:2), (min-resolution:192dpi), (min-resolution:2dppx){
+    background-image: url(../images/index/background-tablet@2x.png);
+  }}
+   @media screen and (max-width:450px) {
+    background-image: url(../img/hero/background-phone@1x.png);
+  
+  @media(min-device-pixel-ratio:2), (min-resolution:192dpi), (min-resolution:2dppx){
+    background-image: url(../img/hero/background-phone@2x.png);
+  }}
 
   @keyframes slide-in {
     from {
@@ -51,5 +58,6 @@
     }
   }
 
-  
 }
+
+
